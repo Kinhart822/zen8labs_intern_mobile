@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Bai19_1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+        <item name="colorPrimaryVariant">#3A1D1D</item>       <!-- màu nền của thanh công cụ -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+    <!-- Customize your theme here. -->
+    <style name="Themecustom" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>             <!-- Thêm đoạn code sau để tránh mấy cái chỗ trắng ở 4 góc -->
+        <!--   Quản lý khung to nhỏ của cửa sổ bật lên    -->
+        <!--        <item name="android:windowMinWidthMinor">90%</item>-->
+    </style>
+</resources>

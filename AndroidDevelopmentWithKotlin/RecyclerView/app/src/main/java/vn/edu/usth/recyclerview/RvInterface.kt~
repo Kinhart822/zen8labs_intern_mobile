@@ -1,0 +1,6 @@
+package com.example.bai16
+
+interface RvInterface {
+    // Lắng nghe xem item nào của RecyclerView được click chọn
+    fun OnClickPhim(pos: Int)
+}

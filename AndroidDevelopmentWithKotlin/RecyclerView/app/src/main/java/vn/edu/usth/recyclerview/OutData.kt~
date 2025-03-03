@@ -1,0 +1,8 @@
+package vn.edu.usth.recyclerview
+
+class OutData constructor(
+    val image:Int,
+    val tenphim:String,
+    val mieuta:String
+) {
+}

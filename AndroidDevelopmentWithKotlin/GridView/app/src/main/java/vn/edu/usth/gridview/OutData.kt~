@@ -1,0 +1,6 @@
+package com.example.bai11
+
+class OutData constructor(
+    val images: Int, val tenPhim: String
+) {
+}

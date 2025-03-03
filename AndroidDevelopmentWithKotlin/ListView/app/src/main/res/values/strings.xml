@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string-array name="arrQuocGia">
+        <item>Lào</item>
+        <item>Campuchia</item>
+        <item>Thái lan</item>
+        <item>Ba lan</item>
+        <item>Hà Lan</item>
+        <item>Phần Lan</item>
+    </string-array>
+</resources>

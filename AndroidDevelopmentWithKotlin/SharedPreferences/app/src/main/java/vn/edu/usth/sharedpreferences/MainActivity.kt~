@@ -1,0 +1,36 @@
+package vn.edu.usth.sharedpreferences
+
+import android.annotation.SuppressLint
+import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import vn.edu.usth.sharedpreferences.databinding.ActivityMainBinding
+
+//                       1 . Khái quát SharedPreferences
+//  - Giả sử bạn đang chơi game, có cuộc gọi đến => ưu tiên số 1 của moblie vẫn là call
+//          => ứng dụng trò chơi của bạn sẽ chuyển sang phương thức tạm dừng (onPause) hoặc dừng onStop
+//          => Sử dụng sharedPreferences để lưu trữ dữ liệu => Khi bạn quay lại trò chơi
+//                  một lần nữa, bạn sẽ có thể tiếp tục nơi bạn đã dừng lại Và cũng với số điểm cuối cùng của bạn.
+//  - Bạn cũng có thể sử dụng lớp này để lưu lại dữ liệu, chẳng hạn như điểm cuối cùng, điểm cao nhất....
+//  - Bạn có thể sử dụng lớp này để lưu log đăng nhập, nhật ký người dùng.
+//          Ví dụ: hầu hết các ứng dụng đều có trang đăng nhập. Trên trang này, người dùng phải nhập tên người dùng và mật khẩu.
+//              Nếu người dùng không muốn nhập thông tin này mỗi lần, lập trình viên có thể code thêm phần tích chọn Ghi nhớ và sau khi chọn hộp kiểm, ứng
+//              dụng sẽ lưu dữ liệu của người dùng. Và khi người dùng quay lại ứng dụng, người dùng sẽ không phải mất thời gian nhập lại username và password.
+
+@SuppressLint("StaticFieldLeak")
+lateinit var binding: ActivityMainBinding
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        enableEdgeToEdge(WindowInsetsCompat.Type.systemBars())
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { _, insets ->
+            insets.consumeSystemWindowInsets()
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684232478984",
+    "project_id": "fir-authentication-1c915",
+    "storage_bucket": "fir-authentication-1c915.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684232478984:android:c798fa7621b10137565cbd",
+        "android_client_info": {
+          "package_name": "vn.edu.usth.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo55zzWEbR7vd0Btj6HDbH8iSt21haH6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
